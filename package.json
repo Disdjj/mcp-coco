@@ -1,0 +1,35 @@
+{
+  "name": "mcp-template",
+  "version": "0.0.1",
+  "keywords": [
+    "MCP"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Disdjj/mcp-template"
+  },
+  "bin": {
+    "mcp-template": "build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "license": "MIT",
+  "author": "DJJ",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.5.0",
+    "fastmcp": "^1.21.0",
+    "minimist": "^1.2.8",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\""
+  }
+}
